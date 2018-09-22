@@ -1,0 +1,75 @@
+*{padding: 0;margin: 0;}
+html{background-color: #F0F0F0}
+ul{list-style: none}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.title {
+    
+    margin-bottom: 30px;
+
+}
+.title>h1 {
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+.title>h2 {
+    text-align: center;
+    margin-top:10px;
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+}
+
+.gallery {
+    width: 920px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 0.3 0.5 #D4D4D4;
+}
+
+.slides {
+    display: flex;
+
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    background: url(../images/panel.jpg) no-repeat;
+    
+}
+.menu > ul {
+    font-size: 0px;
+    height: 45px;
+}
+.menu > ul > li {
+    font-size: 16px;
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    overflow: hidden;
+    background: url(../images/divider.png) no-repeat right;
+}
+.menu > ul > li > img {
+    margin-top: 10px;
+}
+.menu>ul::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 45px;
+    background: url(../images/divider.png) no-repeat;
+}
+
+.menu > ul > li:hover {
+    background-color: #D4D4D4;
+}
+
+.menu > ul > li.active {
+    background-color: rgba(231, 218, 218, 0.603);
+}
